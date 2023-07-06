@@ -7,23 +7,24 @@
     <title>Contacto</title>
     <link rel="shortcut icon" href="../img/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="../img/Logo.png" alt="foto de logo ">
+    <header class="header">
+        <div class="logo-nav-container">
+            <img class="logo" src="../img/Logo.png" alt="foto del logo">
+            <span class="menu-icon">ver menu</span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./Quienes somos.html">Quienes somos</a></li>
+                    <li><a href="./Catalogo.html">Catalogo</a></li>
+                    <li><a href="./Informacion.html">Informacion</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a class="listas" href="../index.html">Inicio</a></li>
-                <li><a class="listas" href="./Quienes somos.html">Quienes somos</a></li>
-                <li><a class="listas" href="./Catalogo.html">Catalogo</a></li>
-                <li><a class="listas" href="./Informacion.html">Informacion</a></li>
-                <li><a class="listas" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="formulario">
@@ -33,12 +34,14 @@
             <input class="contacto" type="text" name="nombre" placeholder="Nombre" required>
             <input class="contacto" type="text" name="apellido" placeholder="Apellido" required>
             <input class="contacto" type="email" name="Correo" placeholder="Correo" required>
-            <input class="contacto" type="text" name="mensaje" placeholder="mensaje" required>
-            <input class="boton" type="submit" value="Enviar">
+            <input class="contacto mensaje" type="text" name="mensaje" placeholder="Mensaje" required>
+            <button class="boton" type="submit"><a class="boton" href="./contacto.html">Enviar</a></button>
     </section>
     </main>
     <footer>
         <p>Copyright © 2021 Todos los derechos reservados.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>

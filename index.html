@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinos</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./img/icono.png">
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <div>
-            <img src="./img/Logo.png" alt="foto del logo">
+    <header class="header">
+        <div class="logo-nav-container">
+            <img class="logo" src="./img/Logo.png" alt="foto del logo">
+            <span class="menu-icon">ver menu</span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/Quienes somos.html">Quienes somos</a></li>
+                    <li><a href="./pages/Catalogo.html">Catalogo</a></li>
+                    <li><a href="./pages/Informacion.html">Informacion</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a class="listas" href="./index.html">Inicio</a></li>
-                <li><a class="listas" href="./pages/Quienes somos.html">Quienes somos</a></li>
-                <li><a class="listas" href="./pages/Catalogo.html">Catalogo</a></li>
-                <li><a class="listas" href="./pages/Informacion.html">Informacion</a></li>
-                <li><a class="listas" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <div>
@@ -41,5 +41,7 @@
     <footer>
         <p>Copyright © 2021 Todos los derechos reservados.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

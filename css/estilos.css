@@ -7,40 +7,45 @@
     margin: 0%;
     box-sizing: border-box;
 }
-header{
-    background-color:rgb(86, 7, 12);
-    width: 100%;
-    height: 81px;
-}
-header div{
+.header{
+    background-color: rgb(86, 7, 12);
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     padding: 10px;
 }
-header div,
-header nav{
-    display: inline-block;
-}
-.menu{
-    float: right;
-    display: inline-block;
-    font-family: 'Playfair Display', serif;
-}
-header nav ul{
-    color: black;
-}
-header nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 75px;
-    padding: 25px 0;
-    float: left;
-    font-size: 18px;
-}
-.listas{
-    display:grid;
-    background-color: rgb(86, 7, 12);
+.header a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 5px 10px;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.2em;
+}
+.menu-icon{
+    display: none;
+    color: rgb(0, 0, 0);
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding:  0.5rem 1rem;
+    font-family: 'Playfair Display', serif;
 }
 body{
     display: grid;
@@ -56,7 +61,7 @@ main{
 main h2{
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 60px;
+    margin-top: 90px;
     font-family: 'Playfair Display', serif;
 }
 main section{
@@ -80,14 +85,17 @@ main section{
 }
 .todotextoinformativo{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     font-family: 'Playfair Display', serif;
+}
+.textoinformativo{
+    padding-top: 90px;
 }
 /*Contacto*/
 .formulario{
@@ -145,6 +153,10 @@ section h2{
     height: 100%;
     width: 100%;
 }
+.mensaje{
+    height: 90px;
+}
+/*Footer*/
 footer{
     background-color: rgb(86, 7, 12);
     height: 45px;
@@ -152,29 +164,45 @@ footer{
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
-@media (max-width: 576px){
-    header{
-        width: 60%;
-        height: 100%;
-        margin: 0;
-        position: fixed;
+@media only screen and (max-width:576px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding:  0.5rem 1rem;
     }
-    .menu{
-        width: 50%;
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding:  0.5rem 0;
+    }
+    .navigation ul li a:hover{
+        background-color: black;
+    }
+    main{
         height: 100%;
-        margin: 0;
-        position: fixed;
-        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
     }
     .todotextoinformativo{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         margin: 0 auto;
         padding: 10px;
         color: rgb(255, 255, 255);
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
-    }
+    
 }
-
