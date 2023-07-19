@@ -1,0 +1,8 @@
+/*Footer*/
+footer{
+    background-color: map-get($colores, primario);
+    height: 45px;
+    color: map-get($colores, texto);
+    text-align: $centrar;
+    /*font-family: $fuente;*/
+}

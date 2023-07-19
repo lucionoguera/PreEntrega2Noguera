@@ -1,0 +1,75 @@
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.1);
+    content: '';
+}
+main{
+    height: 100vh;
+    @include ancho(100%);
+    /*width: $full-width;*/
+    background-image: url(../img/fondo8comprimido.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: $centrar;
+}
+h2{
+    color: map-get($colores, texto);
+    text-align: $centrar;
+    margin-top: 90px;
+    /*font-family: $fuente;*/
+}
+section{
+    text-align: $centrar;
+}
+.texto{
+    width: 500PX;
+    height: 50PX;
+    padding: 80px 0 0 10px;
+    color: map-get($colores, texto);
+    text-align: $centrar;
+    @include display(block);
+    /*display: block;*/
+    font-size: 18px;
+    /*font-family: $fuente;*/
+}
+#foto{
+    width: 500px;
+    height: 300px;
+    margin-left: 800px;
+    @include display(block);
+    /*display: block;*/
+}
+.container{
+    @include ancho(100%);
+    /*width: $full-width;*/
+    @include display(flex);
+    /*display: flex;*/
+    justify-content: $centrar;
+    flex-wrap: wrap;
+    /*font-family: $fuente;*/
+    .caja:hover{
+        transform: scale(1.1);
+        transform: skewY(10deg);
+        cursor: pointer;
+    }
+    .caja{
+        margin: 15px;
+        a{
+            color: map-get($colores, texto);
+        }
+        p{
+            color: map-get($colores, texto);
+            text-align: $centrar;
+            font-size: 20px;
+        }
+        img{
+            width: 220px;
+            height: 260px;
+                border-radius: 30px;
+            }
+        }
+    }

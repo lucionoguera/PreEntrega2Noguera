@@ -1,0 +1,41 @@
+/*Contacto*/
+.formulario{
+    width: 400px;
+    padding: 30px;
+    background-color: map-get($colores, primario);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: map-get($colores, texto);
+    box-shadow: 7px 13px 37px #696969;
+    position: relative;
+    /*font-family: $fuente;*/
+    .contacto{
+        @include ancho(100%);
+        /*width: $full-width;*/
+        background-color: map-get($colores, texto);
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid;
+        color: black;
+    }
+    section h2{
+        color: map-get($colores, texto);
+        margin-top: 0;
+    }
+    .mensaje{
+        height: 90px;
+    }
+    .boton{
+        @include ancho(100%);
+        /*width: $full-width;*/
+        background-color: rgb(0, 0, 0);
+        border: none;
+        padding: 12px;
+        color: map-get($colores, texto);
+        margin: 16 px 0;
+        font-size: 16px;
+        text-decoration: none;
+    }
+}

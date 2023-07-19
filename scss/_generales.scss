@@ -1,0 +1,15 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    @include display(grid);
+    /*display: grid;*/
+
+}
+.menu-icon{
+    @include display(none);
+    /*display: none;*/
+    color: map-get($colores, texto)
+}

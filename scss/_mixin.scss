@@ -1,0 +1,6 @@
+@mixin ancho($ancho){
+    width: $ancho;
+}
+@mixin display($display){
+    display: $display;
+}

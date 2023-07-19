@@ -1,0 +1,41 @@
+/*header*/
+.header{
+    background-color: map-get($colores, primario);
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1;
+    a {
+        color:map-get($colores, texto);
+        text-decoration: none;
+    }
+    .logo-nav-container{
+        @include display(flex);
+        /*display: flex;*/
+        justify-content: space-between;
+        align-items: $centrar;
+        flex-wrap: wrap;
+    }
+    .logo{
+        letter-spacing: 15px;
+        font-size: 1.2em;
+    }
+    .navigation ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            @include display(inline-block);
+            /*display: inline-block;*/
+            a{
+                @include display(block);
+                /*display: block;*/
+                padding:  0.5rem 1rem;
+                /*font-family: $fuente;*/
+            }
+        }
+    }
+}

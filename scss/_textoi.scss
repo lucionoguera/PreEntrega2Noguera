@@ -1,0 +1,16 @@
+.todotextoinformativo{
+    @include ancho(100%);
+    /*width: $full-width;*/
+    height: $full-height;
+    margin: 0 auto;
+    padding: 10px;
+    color: map-get($colores, texto);
+    @include display(block);
+    /*display: grid;*/
+    grid-template-columns: 1fr;
+    text-align: $centrar;
+    /*font-family: $fuente;*/
+    .textoinformativo{
+        padding-top: 80px;
+    }
+}

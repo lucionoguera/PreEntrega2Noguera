@@ -1,0 +1,28 @@
+$texto: primario;
+
+@if $texto == primario{
+    .formulario{
+        font-family: $fuente;
+    }
+    a{
+        font-family: $fuente;
+    }
+    .todotextoinformativo{
+        font-family: $fuente;
+    }
+    h2{
+        font-family: $fuente;
+    }
+    .texto{
+        font-family: $fuente;
+    }
+    .container{
+        font-family: $fuente;
+    }
+    footer{
+        font-family: $fuente;
+    }
+    .menu-icon{
+        font-family: $fuente;
+    }
+}

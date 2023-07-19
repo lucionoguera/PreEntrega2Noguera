@@ -1,0 +1,50 @@
+@media only screen and (max-width:576px) {
+    .menu-icon{
+        @include display(block);
+        /*display: block;*/
+        cursor: pointer;
+        padding:  0.5rem 1rem;
+    }
+    .navigation{
+        @include ancho(100%);
+        /*width: $full-width;*/
+        margin-top: 1rem;
+    }
+    .navigation ul{
+        @include display(none);
+        /*display: none;*/
+    }
+    .navigation ul.show{
+        @include display(block);
+        /*display: block;*/
+    }
+    .navigation ul li{
+        @include display(block);
+        /*display: block;*/
+    }
+    .navigation ul li a{
+        @include display(block);
+        /*display: block;*/
+        padding:  0.5rem 0;
+    }
+    .navigation ul li a:hover{
+        background-color: black;
+    }
+    main{
+        height: $full-height;
+        @include ancho(100%);
+        /*width: $full-width;*/
+        flex-wrap: wrap;
+    }
+    .todotextoinformativo{
+        @include ancho(100%);
+        /*width: $full-width;*/
+        height: $full-height;
+        margin: 0 auto;
+        padding: 10px;
+        color: map-get($colores, texto);
+        @include display(grid);
+        /*display: grid;*/
+        grid-template-columns: 1fr;
+        text-align: $centrar;
+    }}
