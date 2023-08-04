@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <meta name="description" content="Info Vinos se especializa en informacion sobre vinos de la Bodega Casa Boher.">
+    <meta name="keywords" content="HTML, CSS, JS,VINOS, VINO, CASA BOHER, BODEGA, INFORMACION">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./img/icono.png">
 </head>
 <body>
     <div class="overlay"></div>
+    <!--Header-->
     <header class="header">
         <div class="logo-nav-container">
-            <img class="logo" src="./img/Logo.png" alt="foto del logo">
+            <a href="./index.html"><img class="logo" src="./img/Logo.png" alt="foto del logo"></a>
             <span class="menu-icon">ver menu</span>
             <nav class="navigation">
                 <ul class="show">
@@ -25,23 +28,29 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div>
-            <h2>Bienvenido a la pagina de informacion sobre los vinos de la bodega Casa Boher.</h2>
-        </div>
-        <section>
-            <h4 class="texto">
-                Bienvenido a nuestra página dedicada a la Bodega Casa Boher, un verdadero tesoro en el mundo del vino. Permítenos llevarte a un viaje a través de la historia, la pasión y el arte que se encuentran detrás de esta prestigiosa bodega.
-                Descubre los excepcionales vinos de Casa Boher. Con viñedos ubicados en la región de Luján de Cuyo, Argentina, Casa Boher ofrece una amplia variedad de vinos de calidad superior. Desde elegantes espumantes hasta potentes tintos, cada botella refleja la dedicación y el cuidado en su elaboración. Disfruta de visitas guiadas y degustaciones en su hermosa bodega. Sumérgete en el mundo de Casa Boher y descubre los sabores únicos de sus vinos. ¡Experimenta la pasión de Casa Boher en cada copa!
-            </h4>
-        </section>
-        <div>
-            <img id="foto" src="./img/muchosvinoscopia.png" alt="foto de vino">
-        </div>    
+    <!--Contenido-->
+    <main class="main-index">
+        <section class="container">
+            <div>
+                <h1>Bienvenido a la pagina de informacion sobre los vinos de la bodega Casa Boher.</h1>
+            </div>
+            <div>
+                <p class="texto">
+                    Bienvenido a nuestra página dedicada a la Bodega Casa Boher, un verdadero tesoro en el mundo del vino. Permítenos llevarte a un viaje a través de la historia, la pasión y el arte que se encuentran detrás de esta prestigiosa bodega.
+                    Descubre los excepcionales vinos de Casa Boher. Ofrece una amplia variedad de vinos de calidad superior. Desde elegantes espumantes hasta potentes tintos, cada botella refleja la dedicación y el cuidado en su elaboración. Disfruta de visitas guiadas y degustaciones en su hermosa bodega. Sumérgete en el mundo de Casa Boher y descubre los sabores únicos de sus vinos. ¡Experimenta la pasión de Casa Boher en cada copa!
+                </p>
+                <div id="foto" >
+                    <img src="./img/muchosvinos.png" alt="foto de 6 vinos de casa boher">
+                </div>
+            </div>
+        </section>    
     </main>
+    <!--Footer-->
     <footer>
-        <p>Copyright © 2021 Todos los derechos reservados.</p>
-    </footer>
+        <section>
+            <p>Copyright © 2021 Todos los derechos reservados.</p>
+        </section>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="scripts.js"></script>
 </body>

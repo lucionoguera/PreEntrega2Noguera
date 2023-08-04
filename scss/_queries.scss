@@ -1,4 +1,5 @@
-@media only screen and (max-width:576px) {
+/*Queries*/
+@media (max-width:576px) {
     .menu-icon{
         @include display(block);
         /*display: block;*/
@@ -47,4 +48,30 @@
         /*display: grid;*/
         grid-template-columns: 1fr;
         text-align: $centrar;
+        .imagen{
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+    }
     }}
+.main-index{
+        padding: 120px 20px 50px;
+        section{
+            div{
+                flex-direction: column;
+                .texto{
+                    width: 90%;
+                }
+                #foto{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .main-texto{
+        padding: 30px 20px 50px;
+    }
+.carousel-inner{
+        width: 100%;
+        height: 100%;
+    }

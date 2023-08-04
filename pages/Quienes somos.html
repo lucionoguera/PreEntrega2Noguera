@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes somos</title>
+    <meta name="description" content="Info Vinos. Encontraras informacion sobre quines somos y que hacemos.">
+    <meta name="keywords" content="HTML, CSS, JS,VINOS, VINO, CASA BOHER, BODEGA, INFORMACION">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/icono.png">
 </head>
 <body>
     <div class="overlay"></div>
+    <!--Header-->
     <header class="header">
         <div class="logo-nav-container">
-            <img class="logo" src="../img/Logo.png" alt="foto del logo">
+            <a href="../index.html"><img class="logo" src="../img/Logo.png" alt="foto del logo"></a>
             <span class="menu-icon">ver menu</span>
             <nav class="navigation">
                 <ul class="show">
@@ -26,20 +31,54 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div>
-            <h2 class="animate__animated animate__zoomInUp">
-                "Bienvenidos a nuestra página de información de vinos. Somos un equipo apasionado por el mundo del vino, dispuestos a compartir nuestro conocimiento contigo. Promovemos el consumo responsable y queremos inspirarte a descubrir nuevos sabores y sumergirte en la cultura del vino. ¡Salud!"
-            </h2>
-        </div>
-        <div>
-            <h2 class="animate__animated animate__zoomInUp">
-                Somos un equipo amantes del vino que se dedica a compartir conocimientos y descubrir la magia de esta bebida. Nuestra página web ofrece información actualizada sobre los vinos de Casa Boher, mas adelante ofreceremos informacion sobre otros vinos, desde su historia y elaboración hasta consejos prácticos. Contamos con expertos sommeliers que se esfuerzan por proporcionar contenido valioso y accesible para todo tipo de personas. Nuestro objetivo es ayudarte a desarrollar un mayor aprecio por el vino y a disfrutar de experiencias enológicas inolvidables. ¡Únete a nosotros en este emocionante viaje y descubre el fascinante mundo de Casa Boher!
-            </h2>
-        </div>
+    <!--Contenido-->
+    <main class="main-texto">
+        <section class="container informacion">
+            <div>
+                <h1 class="animate__animated animate__zoomInUp">
+                    Nos complace contarles quienes somos
+                </h1>
+            </div>
+        </section>
+        <section class="container">
+            <div>
+                <h3 class="animate__animated animate__zoomInUp">
+                    "Somos un grupo de personas apasionado por el mundo del vino, dispuestos a compartir nuestro conocimiento contigo. Promovemos el consumo responsable y queremos inspirarte a descubrir nuevos sabores y sumergirte en la cultura del vino. ¡Salud!"
+                </h3>
+            </div>
+        </section>
+        <section class="container">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../img/fincas-img-3.jpg" class="d-block w-100" alt="Foto de una finca">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/fincas-img-2.jpg"  class="d-block w-100" alt="Foto de una finca de casa boher ">
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>    
+        <section class="container">
+            <div>
+                <h3 class=" animate__animated animate__zoomInUp">
+                    Nuestra página web ofrece información actualizada sobre los vinos de Casa Boher, mas adelante les contaremos sobre otros vinos, su historia y elaboración hasta consejos prácticos. En nuestro equipo hay expertos sommeliers que se esfuerzan por proporcionar informacion valiosa y accesible para todo nuestros seguidores. Nuestro objetivo es ayudarte a desarrollar un mayor aprecio por el vino y a disfrutar de experiencias enológicas inolvidables. ¡Únete a nosotros en este emocionante viaje y descubre el fascinante mundo de Casa Boher!
+                </h3>
+            </div>
+        </section>
     </main>
+    <!--Footer-->
     <footer>
-        <p>Copyright © 2021 Todos los derechos reservados.</p>
+        <section class="animate__animated animate__zoomInDown">
+            <p>Copyright © 2021 Todos los derechos reservados.</p>
+        </section>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="../scripts.js"></script>

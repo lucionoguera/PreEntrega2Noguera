@@ -1,5 +1,25 @@
-/*Variables*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap"); /*header*/
+/*Variables*/ /*Maps*/ /*Mixin*/ /*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
+/*Generales*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  /*display: grid;*/
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  /*display: none;*/
+  color: white;
+}
+
+/*header*/
 .header {
   background-color: rgb(86, 7, 12);
   padding: 2rem 0;
@@ -41,35 +61,19 @@
   /*font-family: $fuente;*/
 }
 
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  /*display: grid;*/
-}
-
-.menu-icon {
-  display: none;
-  /*display: none;*/
-  color: white;
-}
-
+/*Main*/
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.75);
   content: "";
 }
 
 main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   /*width: $full-width;*/
   background-image: url(../img/fondo8comprimido.webp);
@@ -78,35 +82,40 @@ main {
   background-position: center;
 }
 
+.main-texto {
+  margin-top: 30px 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 30px 20px;
+  /*font-family: $fuentes;*/
+}
+
 h2 {
   color: white;
   text-align: center;
-  margin-top: 90px;
-  /*font-family: $fuente;*/
+  margin-top: 50px;
+  /*font-family: $fuentes;*/
+  margin-bottom: 50px;
 }
 
-section {
-  text-align: center;
-}
-
-.texto {
-  width: 500PX;
-  height: 50PX;
-  padding: 80px 0 0 10px;
+h3 {
   color: white;
   text-align: center;
-  display: block;
-  /*display: block;*/
-  font-size: 18px;
-  /*font-family: $fuente;*/
+  margin-top: 50px;
+  /*font-family: $fuentes;*/
+  margin-bottom: 20px;
 }
 
-#foto {
-  width: 500px;
-  height: 300px;
-  margin-left: 800px;
-  display: block;
-  /*display: block;*/
+.catalogo-texto {
+  padding: 60px 0;
+  font-size: 20px;
+}
+
+.informacion {
+  padding-top: 30px;
 }
 
 .container {
@@ -116,7 +125,7 @@ section {
   /*display: flex;*/
   justify-content: center;
   flex-wrap: wrap;
-  /*font-family: $fuente;*/
+  /*font-family: funete;*/
 }
 .container .caja:hover {
   transform: scale(1.1);
@@ -126,13 +135,13 @@ section {
 .container .caja {
   margin: 15px;
 }
-.container .caja a {
-  color: white;
-}
 .container .caja p {
   color: white;
   text-align: center;
   font-size: 20px;
+}
+.container .caja a {
+  color: white;
 }
 .container .caja img {
   width: 220px;
@@ -140,12 +149,45 @@ section {
   border-radius: 30px;
 }
 
+.main-index {
+  display: flex;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+.main-index section {
+  z-index: 0;
+}
+.main-index section div {
+  display: flex;
+  /*display: flex;*/
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.main-index section div .texto {
+  width: 40%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: block;
+  /*display: block;*/
+  font-size: 22px;
+  /*font-family: 'Playfair Display', serif;*/
+}
+.main-index section div #foto {
+  width: 40%;
+}
+.main-index section div #foto img {
+  width: 40%;
+}
+
 .todotextoinformativo {
   width: 100%;
   /*width: $full-width;*/
   height: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0px;
   color: white;
   display: block;
   /*display: grid;*/
@@ -154,7 +196,18 @@ section {
   /*font-family: $fuente;*/
 }
 .todotextoinformativo .textoinformativo {
-  padding-top: 80px;
+  padding-top: 0px;
+  font-size: 18px;
+}
+.todotextoinformativo .imagen {
+  height: 514px;
+  width: 800px;
+  border-radius: 15px;
+}
+
+.carousel-inner {
+  width: 800px;
+  height: 600px;
 }
 
 /*Contacto*/
@@ -164,6 +217,7 @@ section {
   background-color: rgb(86, 7, 12);
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 100px;
   border-radius: 4px;
   color: white;
   box-shadow: 7px 13px 37px #696969;
@@ -208,7 +262,8 @@ footer {
   /*font-family: $fuente;*/
 }
 
-@media only screen and (max-width: 576px) {
+/*Queries*/
+@media (max-width: 576px) {
   .menu-icon {
     display: block;
     /*display: block;*/
@@ -258,7 +313,35 @@ footer {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  .todotextoinformativo .imagen {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
 }
+.main-index {
+  padding: 120px 20px 50px;
+}
+.main-index section div {
+  flex-direction: column;
+}
+.main-index section div .texto {
+  width: 90%;
+}
+.main-index section div #foto {
+  width: 90%;
+}
+
+.main-texto {
+  padding: 30px 20px 50px;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+/*Condicionales*/
 .formulario {
   font-family: "Playfair Display", serif;
 }

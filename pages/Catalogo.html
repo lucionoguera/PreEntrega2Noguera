@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
+    <meta name="description" content="Info Vinos. Encontraras la informacion de los distintos vinos de Casa Boher.">
+    <meta name="keywords" content="HTML, CSS, JS,VINOS, VINO, CASA BOHER, BODEGA, INFORMACION">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/icono.png">
 </head>
 <body>
     <div class="overlay"></div>
+    <!--Header-->
     <header class="header">
         <div class="logo-nav-container">
-            <img class="logo" src="../img/Logo.png" alt="foto del logo">
+            <a href="../index.html"><img class="logo" src="../img/Logo.png" alt="foto del logo"></a>
             <span class="menu-icon">ver menu</span>
             <nav class="navigation">
                 <ul class="show">
@@ -26,21 +29,27 @@
             </nav>
         </div>
     </header>
-    <main class="main">
-        <h2>
-            Aca encontraras la Informacion sobre los vinos de Casa Boher.
-        </h2>
+    <!--Contenido-->
+    <main class="container">
+        <section class="container animate__animated animate__slideInLeft catalogo-texto">
+            <div>
+                <h1>Aca encontraras la Informacion sobre los vinos de Casa Boher.</h1>
+            </div>
+        </section>
         <section class="container animate__animated animate__slideInLeft">
-            <div class="caja caja1"><img src="../img/presentacionM.jpg" alt="Foto de vino"><p>Malbec</p><a href="https://www.rosellboher.com/productos/casa-boher/malbec.php" target="_blank"> Informacion</a></div>
-            <div class="caja caja2"><img src="../img/presentacionCs.jpg" alt="Foto de vino"><p>Cabernet Suavignon</p><a href="https://www.rosellboher.com/productos/casa-boher/cabernet-sauvignon.php" target="_blank"> Informacion</a></div>
-            <div class="caja caja3"><img src="../img/presentacionCf.jpg" alt="Foto de vino"><p>Caberbet Franc</p><a href="https://www.rosellboher.com/productos/casa-boher/cabernet-franc.php" target="_blank"> Informacion</a></div>
-            <div class="caja caja4"><img src="../img/presentacionMl.jpg" alt="Foto de vino"><p>Merlot</p><a href="https://www.rosellboher.com/productos/casa-boher/merlot.php" target="_blank"> Informacion</a></div>
-            <div class="caja caja5"><img src="../img/presentacionR.jpg" alt="Foto de vino"><p>Rose</p><a href="https://www.rosellboher.com/productos/casa-boher/rose.php" target="_blank"> Informacion</a></div>
-            <div class="caja caja6"><img src="../img/presentacionSb.jpg" alt="Foto de vino"><p>Suavignon Blanc</p><a href="https://www.rosellboher.com/productos/casa-boher/sauvignon-blanc.php" target="_blank"> Informacion</a></div>
+            <div class="caja caja1"><img src="../img/presentacionM.jpg" alt="Foto de vino de casa boher Malbec"><p>Malbec</p><a href="https://www.rosellboher.com/productos/casa-boher/malbec.php" target="_blank"> Informacion</a></div>
+            <div class="caja caja2"><img src="../img/presentacionCs.jpg" alt="Foto de vino de casa boher Cabernet Suavignon"><p>Cabernet Suavignon</p><a href="https://www.rosellboher.com/productos/casa-boher/cabernet-sauvignon.php" target="_blank"> Informacion</a></div>
+            <div class="caja caja3"><img src="../img/presentacionCf.jpg" alt="Foto de vino de casa boher Cabernet Francés"><p>Caberbet Franc</p><a href="https://www.rosellboher.com/productos/casa-boher/cabernet-franc.php" target="_blank"> Informacion</a></div>
+            <div class="caja caja4"><img src="../img/presentacionMl.jpg" alt="Foto de vino de casa boher Merlot"><p>Merlot</p><a href="https://www.rosellboher.com/productos/casa-boher/merlot.php" target="_blank"> Informacion</a></div>
+            <div class="caja caja5"><img src="../img/presentacionR.jpg" alt="Foto de vino de casa boher Rose"><p>Rose</p><a href="https://www.rosellboher.com/productos/casa-boher/rose.php" target="_blank"> Informacion</a></div>
+            <div class="caja caja6"><img src="../img/presentacionSb.jpg" alt="Foto de vino de casa boher suavignon Blanc"><p>Suavignon Blanc</p><a href="https://www.rosellboher.com/productos/casa-boher/sauvignon-blanc.php" target="_blank"> Informacion</a></div>
         </section>
     </main>
+    <!--Footer-->
     <footer>
-        <p>Copyright © 2021 Todos los derechos reservados.</p>
+        <section class="animate__animated animate__zoomInDown">
+            <p>Copyright © 2021 Todos los derechos reservados.</p>
+        </section>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="../scripts.js"></script>
