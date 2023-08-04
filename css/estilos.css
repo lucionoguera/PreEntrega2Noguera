@@ -212,7 +212,8 @@ h3 {
 
 /*Contacto*/
 .formulario {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   padding: 30px;
   background-color: rgb(86, 7, 12);
   margin: auto;
