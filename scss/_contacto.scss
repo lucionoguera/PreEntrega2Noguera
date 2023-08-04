@@ -1,6 +1,7 @@
 /*Contacto*/
 .formulario{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     padding: 30px;
     background-color: map-get($colores, primario);
     margin: auto;
